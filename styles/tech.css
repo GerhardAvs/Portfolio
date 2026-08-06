@@ -1,0 +1,38 @@
+/* ==========================================================================
+   TECH — deliberately brief. Plain text, no chips, no icon grid.
+   ========================================================================== */
+
+.tech-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-6) var(--space-16);
+}
+
+.tech-row {
+  display: contents;
+}
+
+.tech-row dt {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-2);
+  padding: var(--space-3) 0;
+  white-space: nowrap;
+}
+
+.tech-row dd {
+  margin: 0;
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-0);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.tech-row:first-child dd { border-top: none; }
+
+@media (max-width: 620px) {
+  .tech-layout { grid-template-columns: 1fr; gap: 0; }
+  .tech-row dt { padding-top: var(--space-5); padding-bottom: 0; }
+  .tech-row dd { border-top: none; padding-top: var(--space-1); }
+}

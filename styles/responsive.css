@@ -2,17 +2,15 @@
    RESPONSIVE — global breakpoints not covered in component files
    ========================================================================== */
 
-@media (max-width: 860px) {
-  :root { --nav-h: 64px; }
+@media (max-width: 780px) {
+  :root { --nav-h: 56px; }
   .section { padding: var(--space-16) 0; }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 480px) {
   .container { padding: 0 var(--space-4); }
-  .hero-actions .btn { width: 100%; justify-content: center; }
 }
 
 @media print {
-  .navbar, #back-to-top, #scroll-progress { display: none !important; }
-  body { background: #fff; color: #000; }
+  .navbar { position: static; }
 }
