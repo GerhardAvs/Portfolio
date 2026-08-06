@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Retrato ilustrado abstracto de Gerardo Avalos">
+  <defs>
+    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101a2e"/>
+      <stop offset="100%" stop-color="#0b0f1a"/>
+    </linearGradient>
+    <linearGradient id="pface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16233d"/>
+      <stop offset="100%" stop-color="#0f1524"/>
+    </linearGradient>
+    <linearGradient id="pring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#pbg)"/>
+
+  <g opacity="0.15" stroke="#8cc8ff" stroke-width="1">
+    <line x1="0" y1="150" x2="600" y2="150"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="0" y1="450" x2="600" y2="450"/>
+    <line x1="150" y1="0" x2="150" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="450" y1="0" x2="450" y2="600"/>
+  </g>
+
+  <circle cx="300" cy="300" r="210" fill="none" stroke="url(#pring)" stroke-width="2" opacity="0.5"/>
+  <circle cx="300" cy="300" r="230" fill="none" stroke="url(#pring)" stroke-width="1" opacity="0.25" stroke-dasharray="4 10"/>
+
+  <!-- Abstract geometric bust -->
+  <g>
+    <ellipse cx="300" cy="255" rx="95" ry="105" fill="url(#pface)" stroke="#243352" stroke-width="2"/>
+    <path d="M150 560 C150 430 220 380 300 380 C380 380 450 430 450 560 Z" fill="url(#pface)" stroke="#243352" stroke-width="2"/>
+
+    <!-- glasses, a nod to a developer aesthetic -->
+    <g stroke="#00e5ff" stroke-width="4" fill="none" opacity="0.9">
+      <rect x="235" y="245" width="55" height="38" rx="10"/>
+      <rect x="310" y="245" width="55" height="38" rx="10"/>
+      <line x1="290" y1="262" x2="310" y2="262"/>
+    </g>
+
+    <!-- subtle circuit accents on shoulders -->
+    <g stroke="#7c5cff" stroke-width="2" opacity="0.5" fill="none">
+      <path d="M170 480 h40 v-30 h30"/>
+      <path d="M430 480 h-40 v-30 h-30"/>
+      <circle cx="210" cy="450" r="3" fill="#7c5cff"/>
+      <circle cx="390" cy="450" r="3" fill="#7c5cff"/>
+    </g>
+  </g>
+</svg>

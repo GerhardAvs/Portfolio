@@ -1,0 +1,102 @@
+/* ==========================================================================
+   ABOUT — editorial two-column: narrative + a compact fact sheet
+   ========================================================================== */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.about-intro .section-title { max-width: 16ch; }
+
+.about-intro p {
+  color: var(--text-1);
+  font-size: var(--fs-md);
+  line-height: 1.8;
+  max-width: 62ch;
+}
+
+.about-intro p.lead {
+  color: var(--text-0);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: var(--space-6);
+}
+
+.about-focus {
+  margin-top: var(--space-8);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.focus-chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+}
+
+/* ---- Fact sheet sidebar ---- */
+.about-sidebar {
+  border-left: 1px solid var(--border);
+  padding-left: var(--space-8);
+}
+
+.about-facts dl {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.about-facts > dl > div {
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-facts > dl > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about-facts dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-3);
+}
+
+.about-facts dd {
+  margin: var(--space-1) 0 0;
+  font-size: 0.95rem;
+  color: var(--text-0);
+}
+
+.about-portrait {
+  margin-top: var(--space-8);
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .about-layout { grid-template-columns: 1fr; }
+  .about-sidebar {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: var(--space-8);
+  }
+}

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   ANIMATIONS — subtle fade / slide only. No glow, no bounce, no cursor gimmicks.
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+[data-count] { font-variant-numeric: tabular-nums; }
+
+/* Selection color */
+::selection {
+  background: var(--accent-soft-strong);
+  color: var(--text-0);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
