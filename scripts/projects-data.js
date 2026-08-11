@@ -9,20 +9,20 @@
 
 const PROJECTS = [
   {
-    title: 'Pizza Survivor',
-    year: '2025',
-    description: 'Videojuego 2D construido con Pygame. Colisiones por máscara de píxeles, movimiento diagonal normalizado y un game loop estable, resueltos a mano.',
+    title: 'Quantum computing for water challenges',
+    year: '2026',
+    description: '',
     image: 'assets/images/project-pizza-survivor.svg',
-    tech: ['Python', 'Pygame'],
-    github: 'https://github.com/GerhardAvs',
+    tech: ['Python', 'Qiskit, PennyLane, MILP, QAOA'],
+    github: 'https://github.com/GerhardAvs/Hackathon-LATAM-OQI-2026',
     demo: null
   },
   {
-    title: 'Bank Account System',
-    year: '2024',
-    description: 'Sistema de gestión de cuentas bancarias con depósito, retiro y transferencia, sobre estructuras de datos propias y validación estricta.',
+    title: 'Machine Learning: XGBoost vs lightGBM',
+    year: '2026',
+    description: '',
     image: 'assets/images/project-bank-system.svg',
-    tech: ['C++', 'SQL'],
+    tech: ['Jupyter', 'Pandas, Numpy, Matplotlib, ScikitLearn'],
     github: 'https://github.com/GerhardAvs',
     demo: null
   },
